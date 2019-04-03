@@ -93,7 +93,7 @@ def test_truncation(truncation):
 
     duration = 10 if truncation is None else truncation
 
-    with pytest.warns(None) as w:
+    with pytest.warns(None, match="not an even multiple") as w:
         for i, (o, d) in enumerate(utils.minibatch_generator(
                 data, 2, shuffle=False, truncation=truncation)):
             assert np.allclose(d["a"], data["a"][:, o:o + duration])
