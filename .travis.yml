@@ -28,7 +28,7 @@ jobs:
   - env: MODE="test"
     cache: false  # disable the cache for one build to make sure that works
   - env: MODE="coverage"
-         NENGO_VERSION="git+https://github.com/nengo/nengo.git"
+         NENGO_VERSION="git+https://github.com/nengo/nengo.git@unsupported"
          TF_VERSION="tensorflow<2.0 --pre"
   - env: MODE="coverage"
          NENGO_VERSION="nengo==2.7.0"
