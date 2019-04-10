@@ -39,6 +39,8 @@ Release History
 
 - Fixed TensorFlow seeding so that randomness can be reliably controlled by
   setting the Simulator seed.
+- Fixed inspection of ``TensorNode.tensor_func`` arguments for partial
+  functions.
 
 2.1.1 (January 11, 2019)
 ------------------------
